@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 5px solid gray;
+            background-color: tomato;
+            background-image: url();
+            /*이미지와 컬러는 같이 적용시킬수 있다.
+            단지 이미지가 배경이 투명해야 한다.
+            이미지가 너무 크면 배경을 가릴수 있다.*/
+            background-repeat: no-repeat;
+            /*백그라운드 반복 적용 해제*/
+            background-attachment: scroll, fixed
+            /*백그라운드 이미지를 스크롤 시키냐 고정시키냐*/
+            background-size: 100px 100px or cover or contain
+            /*백그라운드 이미지 사이즈 변경
+            cover는 는 화면 전체에 맞춰서 사용되므로 짤리는 부분이 사용됨
+            contain는 화면 전체에 사이즈를 맞추므로 빈 부분이 만들어진다.*/
+            background-position: left top or x% y% or x y
+            /*이미지 위치 설정 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        hello world
+    </div>
+</body>
+
+</html>

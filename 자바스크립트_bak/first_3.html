@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function add(x, y) {
+            return eval(x) + eval(y); // + 숫자의 경우는 더하기를 하는데 문자열의 + 기호는 두개의 문자열을
+            //합치는 기능을 한다
+        }
+
+        //함수에 이름을 안주고 함수를 만들어서 그 주소값을 sub 에 부여함 위의 add하고 결국은 동일한다
+        var sub = function(x, y) {
+            return x - y;
+        }
+
+        console.log(add(4, 5));
+        console.log(sub(4, 5));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

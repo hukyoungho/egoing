@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        var person = {
+            "name": "홍길동",
+            "age": "23",
+            "address": "서울시 은평구"
+        }
+        document.write("이름 : " + person.name + "<br/>");
+        document.write("나이 : " + person.age + "<br/>");
+        document.write("주소 : " + person.address + "<br/>");
+
+        //여러명일때
+        var person2 = [{
+                "name": "이름1",
+                "age": "나이1",
+                "address": "주소1"
+            }, {
+                "name": "이름2",
+                "age": "나이2",
+                "address": "주소2"
+            }, {
+                "name": "이름3",
+                "age": "나이3",
+                "address": "주소3"
+            }
+
+        ]
+
+
+        document.write(person2[0].name + "," + person2[0].age + "," + person2[0].address + "<br/>");
+        document.write(person2[1].name + "," + person2[1].age + "," + person2[1].address + "<br/>");
+        document.write(person2[2].name + "," + person2[2].age + "," + person2[2].address + "<br/>");
+
+
+        //포문을 이용할 경우
+        for (i = 0; i < person2.length; i++) {
+            document.write(person2[i].name + "," + person2[i].age + "," + person2[i].address + "<br/>");
+
+        }
+        var a = [function() {
+            return 1;
+        }]
+        console.log(a[0]());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>객체</title>
+ </head>
+ <script>
+ var person={
+		name:"홍길동",
+		id:3333,
+		age:43,
+		car:"sonata",
+		output:function(){  //함수를 저장했으므로 output 은 함수를 호출해야 한다 
+			return this.name + " " + this.age + " " + this.id + " " + this.car;
+		}
+ }
+
+
+	document.write( person.name + "<br/>");
+	document.write( person.id + "<br/>");
+	document.write( person.age + "<br/>");
+	document.write( person.car + "<br/>");
+	document.write( person.output() + "<br/>");  //output은 함수임 그래서 괄호 꼭 필요
+
+ </script>
+ <body>
+  
+ </body>
+</html>

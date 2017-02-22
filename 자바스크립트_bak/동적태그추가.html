@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+    function goAdd()
+	{
+		//추가할 태그 객체를 만든다 
+		var input = document.createElement("input"); 
+		//input 태그를 동적으로 생성한다 
+		input.name="test";
+        input.style.color="red";
+		//div 태그에 동적으로 추가한다 - target아이디를 갖는 태그에 
+		document.getElementById("target").appendChild(input);
+	}
+
+	 function goRemove()
+	{
+		//삭제될 대상에 대한 주소 가져오기 
+		var del = document.getElementsByName("test");
+		if(del.length>0)
+		{
+			//추가된 input 태그들을 name 속성을 사용해서 배열로 가져온다 
+			var last = del[del.length-1]; //맨 마지막에 생성된것을 찾는다 
+			document.getElementById("target").removeChild(last);
+		}
+	}
+ </script>
+
+ </head>
+
+ <body>
+  
+ <div id="target">태그 동적 추가하기 </div>
+
+ <a href="#none" onclick="goAdd()">동적추가하기</a>
+  <a href="#none" onclick="goRemove()">동적삭제하기</a>
+ 
+ </body>
+</html>
